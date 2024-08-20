@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validator</title>
+</head>
+<body>
+
+    <div class="container">
+        <img src="bg.png">
+        <form id="mainForm" movalidate>
+            <h2> Javascript Form Validator</h2>
+            <div class="form-control">
+                <label for="name">Nombre</label>
+                <input type="text" id="name"
+                placeholder="Ingresa tu Nombre"
+                autocomplete="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                placeholder="Ingresa tu email"
+                autocomplete="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="phone"
+                placeholder="Ingresa tu teléfono "
+                autocomplete="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="contraseña">Contraseña</label>
+                <input type="contraseña" id="contraseña"
+                placeholder="Ingresa tu contraseña"
+                autocomplete="off">
+                <i class="icon"></i>
+            </div>
+            <div class="form-control">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Ingrese 
+                su mensaje"></textarea>
+                <i class="icon"></i>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+
+        </form>   
+    </div>
+
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Success!</h2>
+            <p>Tu formulario ha sido enviado con éxito</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
